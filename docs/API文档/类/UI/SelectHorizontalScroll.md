@@ -12,11 +12,11 @@ GameUI
 
 IDragHandler, IPointerDownHandler, IPointerUpHandler
 
-## 变量/属性
+## 字段/属性/事件
 
 | 类型              | 名称         | 读写性（只读，读写） | 描述                       |
 | ----------------- | ------------ | -------------------- | -------------------------- |
-| event Action<int> | selectAction | 读写                 | 选择的事件 int指选择的编号 |
+| event Action<int> | SelectAction | 读写                 | 选择的事件 int指选择的编号 |
 
 
 ## 公共函数

@@ -12,7 +12,7 @@ GameUI
 
 IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 
-## 变量/属性
+## 字段/属性/事件
 
 | 类型   | 名称      | 读写性（只读，读写） | 描述     |
 | ------ | --------- | -------------------- | -------- |
