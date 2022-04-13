@@ -1,0 +1,877 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Soldier
+   | &#28216;&#25103;&#25991;&#26723; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Soldier
+   | &#28216;&#25103;&#25991;&#26723; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GameInterface.Soldier">
+  
+  
+  <h1 id="GameInterface_Soldier" data-uid="GameInterface.Soldier" class="text-break">Class Soldier
+  </h1>
+  <div class="markdown level0 summary"><p>士兵脚本，储存士兵数据，士兵AI</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Soldier</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GameInterface.IAttack.html">IAttack</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GameInterface.html">GameInterface</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="GameInterface_Soldier_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Soldier : MonoBehaviour, IAttack</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="GameInterface_Soldier_attack" data-uid="GameInterface.Soldier.attack">attack</h4>
+  <div class="markdown level1 summary"><p>攻击值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float attack</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="GameInterface_Soldier_attackCDCount" data-uid="GameInterface.Soldier.attackCDCount">attackCDCount</h4>
+  <div class="markdown level1 summary"><p>攻击冷却计时</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float attackCDCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="GameInterface_Soldier_attackTarget" data-uid="GameInterface.Soldier.attackTarget">attackTarget</h4>
+  <div class="markdown level1 summary"><p>敌军目标(地址引用)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;IAttack&gt; attackTarget</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="GameInterface.IAttack.html">IAttack</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="GameInterface_Soldier_attribute" data-uid="GameInterface.Soldier.attribute">attribute</h4>
+  <div class="markdown level1 summary"><p>士兵属性</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoldierAttribute attribute</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GameInterface.SoldierAttribute.html">SoldierAttribute</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="GameInterface_Soldier_circleCollider2D" data-uid="GameInterface.Soldier.circleCollider2D">circleCollider2D</h4>
+  <div class="markdown level1 summary"><p>范围碰撞器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CircleCollider2D circleCollider2D</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CircleCollider2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="GameInterface_Soldier_dir" data-uid="GameInterface.Soldier.dir">dir</h4>
+  <div class="markdown level1 summary"><p>方向</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int dir</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="GameInterface_Soldier_experience" data-uid="GameInterface.Soldier.experience">experience</h4>
+  <div class="markdown level1 summary"><p>经验(默认为0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float experience</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="GameInterface_Soldier_level" data-uid="GameInterface.Soldier.level">level</h4>
+  <div class="markdown level1 summary"><p>士兵等级</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int level</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="GameInterface_Soldier_levelUpExp" data-uid="GameInterface.Soldier.levelUpExp">levelUpExp</h4>
+  <div class="markdown level1 summary"><p>升级所需经验</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float levelUpExp</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="GameInterface_Soldier_maxHP" data-uid="GameInterface.Soldier.maxHP">maxHP</h4>
+  <div class="markdown level1 summary"><p>最大血量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float maxHP</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="GameInterface_Soldier_moveTarget" data-uid="GameInterface.Soldier.moveTarget">moveTarget</h4>
+  <div class="markdown level1 summary"><p>移动路径点</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;Transform&gt; moveTarget</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Transform</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="GameInterface_Soldier_soldierInfoPoint" data-uid="GameInterface.Soldier.soldierInfoPoint">soldierInfoPoint</h4>
+  <div class="markdown level1 summary"><p>士兵信息显示位置</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform soldierInfoPoint</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="GameInterface_Soldier_soldierState" data-uid="GameInterface.Soldier.soldierState">soldierState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SoldierState soldierState</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GameInterface.SoldierState.html">SoldierState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="GameInterface_Soldier_spriteRenderer" data-uid="GameInterface.Soldier.spriteRenderer">spriteRenderer</h4>
+  <div class="markdown level1 summary"><p>渲染器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpriteRenderer spriteRenderer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SpriteRenderer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="GameInterface_Soldier_Base_" data-uid="GameInterface.Soldier.Base*"></a>
+  <h4 id="GameInterface_Soldier_Base" data-uid="GameInterface.Soldier.Base">Base</h4>
+  <div class="markdown level1 summary"><p>所属基地</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OperationalBase Base { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GameInterface.OperationalBase.html">OperationalBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GameInterface_Soldier_CurrentHP_" data-uid="GameInterface.Soldier.CurrentHP*"></a>
+  <h4 id="GameInterface_Soldier_CurrentHP" data-uid="GameInterface.Soldier.CurrentHP">CurrentHP</h4>
+  <div class="markdown level1 summary"><p>当前血量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CurrentHP { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GameInterface_Soldier_GameObject_" data-uid="GameInterface.Soldier.GameObject*"></a>
+  <h4 id="GameInterface_Soldier_GameObject" data-uid="GameInterface.Soldier.GameObject">GameObject</h4>
+  <div class="markdown level1 summary"><p>游戏物体</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject GameObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GameInterface_Soldier_PlayerIndex_" data-uid="GameInterface.Soldier.PlayerIndex*"></a>
+  <h4 id="GameInterface_Soldier_PlayerIndex" data-uid="GameInterface.Soldier.PlayerIndex">PlayerIndex</h4>
+  <div class="markdown level1 summary"><p>所属玩家索引</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PlayerIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GameInterface_Soldier_SoldierState_" data-uid="GameInterface.Soldier.SoldierState*"></a>
+  <h4 id="GameInterface_Soldier_SoldierState" data-uid="GameInterface.Soldier.SoldierState">SoldierState</h4>
+  <div class="markdown level1 summary"><p>士兵状态</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoldierState SoldierState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GameInterface.SoldierState.html">SoldierState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="GameInterface_Soldier_Attack_" data-uid="GameInterface.Soldier.Attack*"></a>
+  <h4 id="GameInterface_Soldier_Attack_GameInterface_IAttack_" data-uid="GameInterface.Soldier.Attack(GameInterface.IAttack)">Attack(IAttack)</h4>
+  <div class="markdown level1 summary"><p>攻击逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual float Attack(IAttack attackSoldier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GameInterface.IAttack.html">IAttack</a></td>
+        <td><span class="parametername">attackSoldier</span></td>
+        <td><p>被攻击的士兵</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>攻击的数值</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GameInterface_Soldier_DestorySolider_" data-uid="GameInterface.Soldier.DestorySolider*"></a>
+  <h4 id="GameInterface_Soldier_DestorySolider" data-uid="GameInterface.Soldier.DestorySolider">DestorySolider()</h4>
+  <div class="markdown level1 summary"><p>摧毁士兵</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DestorySolider()</code></pre>
+  </div>
+  
+  
+  <a id="GameInterface_Soldier_GetDamage_" data-uid="GameInterface.Soldier.GetDamage*"></a>
+  <h4 id="GameInterface_Soldier_GetDamage_System_Single_GameInterface_IAttack_System_Single__" data-uid="GameInterface.Soldier.GetDamage(System.Single,GameInterface.IAttack,System.Single@)">GetDamage(Single, IAttack, out Single)</h4>
+  <div class="markdown level1 summary"><p>接受伤害</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetDamage(float attack, IAttack attacker, out float destroyExperience)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">attack</span></td>
+        <td><p>攻击值</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GameInterface.IAttack.html">IAttack</a></td>
+        <td><span class="parametername">attacker</span></td>
+        <td><p>攻击者</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">destroyExperience</span></td>
+        <td><p>摧毁经验</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>是否被摧毁</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GameInterface_Soldier_GetExp_" data-uid="GameInterface.Soldier.GetExp*"></a>
+  <h4 id="GameInterface_Soldier_GetExp_System_Single_" data-uid="GameInterface.Soldier.GetExp(System.Single)">GetExp(Single)</h4>
+  <div class="markdown level1 summary"><p>获得经验</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetExp(float addExp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">addExp</span></td>
+        <td><p>增加的经验</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GameInterface_Soldier_Init_" data-uid="GameInterface.Soldier.Init*"></a>
+  <h4 id="GameInterface_Soldier_Init_GameInterface_OperationalBase_" data-uid="GameInterface.Soldier.Init(GameInterface.OperationalBase)">Init(OperationalBase)</h4>
+  <div class="markdown level1 summary"><p>士兵初始化</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Init(OperationalBase operationalBase)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GameInterface.OperationalBase.html">OperationalBase</a></td>
+        <td><span class="parametername">operationalBase</span></td>
+        <td><p>士兵的基地</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GameInterface_Soldier_LevelUp_" data-uid="GameInterface.Soldier.LevelUp*"></a>
+  <h4 id="GameInterface_Soldier_LevelUp" data-uid="GameInterface.Soldier.LevelUp">LevelUp()</h4>
+  <div class="markdown level1 summary"><p>等级提升(回复一半的血量,提升数值)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LevelUp()</code></pre>
+  </div>
+  
+  
+  <a id="GameInterface_Soldier_Move_" data-uid="GameInterface.Soldier.Move*"></a>
+  <h4 id="GameInterface_Soldier_Move" data-uid="GameInterface.Soldier.Move">Move()</h4>
+  <div class="markdown level1 summary"><p>移动逻辑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Move()</code></pre>
+  </div>
+  
+  
+  <a id="GameInterface_Soldier_OnSoldierAttack_" data-uid="GameInterface.Soldier.OnSoldierAttack*"></a>
+  <h4 id="GameInterface_Soldier_OnSoldierAttack" data-uid="GameInterface.Soldier.OnSoldierAttack">OnSoldierAttack()</h4>
+  <div class="markdown level1 summary"><p>士兵Attack状态时每帧调用</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSoldierAttack()</code></pre>
+  </div>
+  
+  
+  <a id="GameInterface_Soldier_OnSoldierDie_" data-uid="GameInterface.Soldier.OnSoldierDie*"></a>
+  <h4 id="GameInterface_Soldier_OnSoldierDie" data-uid="GameInterface.Soldier.OnSoldierDie">OnSoldierDie()</h4>
+  <div class="markdown level1 summary"><p>士兵Die状态时每帧调用</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSoldierDie()</code></pre>
+  </div>
+  
+  
+  <a id="GameInterface_Soldier_OnSoldierIdle_" data-uid="GameInterface.Soldier.OnSoldierIdle*"></a>
+  <h4 id="GameInterface_Soldier_OnSoldierIdle" data-uid="GameInterface.Soldier.OnSoldierIdle">OnSoldierIdle()</h4>
+  <div class="markdown level1 summary"><p>士兵Idle状态时每帧调用</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSoldierIdle()</code></pre>
+  </div>
+  
+  
+  <a id="GameInterface_Soldier_OnSoldierMove_" data-uid="GameInterface.Soldier.OnSoldierMove*"></a>
+  <h4 id="GameInterface_Soldier_OnSoldierMove" data-uid="GameInterface.Soldier.OnSoldierMove">OnSoldierMove()</h4>
+  <div class="markdown level1 summary"><p>士兵Move状态时每帧调用</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSoldierMove()</code></pre>
+  </div>
+  
+  
+  <a id="GameInterface_Soldier_OnSoldierMoveAttack_" data-uid="GameInterface.Soldier.OnSoldierMoveAttack*"></a>
+  <h4 id="GameInterface_Soldier_OnSoldierMoveAttack" data-uid="GameInterface.Soldier.OnSoldierMoveAttack">OnSoldierMoveAttack()</h4>
+  <div class="markdown level1 summary"><p>士兵MoveAttack状态时每帧调用</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSoldierMoveAttack()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GameInterface.IAttack.html">IAttack</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            游戏文档
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

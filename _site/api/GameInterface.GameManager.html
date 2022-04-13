@@ -1,0 +1,455 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GameManager
+   | &#28216;&#25103;&#25991;&#26723; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GameManager
+   | &#28216;&#25103;&#25991;&#26723; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GameInterface.GameManager">
+  
+  
+  <h1 id="GameInterface_GameManager" data-uid="GameInterface.GameManager" class="text-break">Class GameManager
+  </h1>
+  <div class="markdown level0 summary"><p>游戏管理器基类，提供给外界游戏内部的抽象方法</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="GameInterface.Singleton-1.html">Singleton</a>&lt;<a class="xref" href="GameInterface.GameManager.html">GameManager</a>&gt;</div>
+    <div class="level2"><span class="xref">GameManager</span></div>
+      <div class="level3"><a class="xref" href="Game.GameManagerOverride.html">GameManagerOverride</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GameInterface.Singleton-1.html#GameInterface_Singleton_1_Instance">Singleton&lt;GameManager&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="GameInterface.Singleton-1.html#GameInterface_Singleton_1_Awake">Singleton&lt;GameManager&gt;.Awake()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GameInterface.html">GameInterface</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="GameInterface_GameManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class GameManager : Singleton&lt;GameManager&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="GameInterface_GameManager_CollectableResourcesDatas_" data-uid="GameInterface.GameManager.CollectableResourcesDatas*"></a>
+  <h4 id="GameInterface_GameManager_CollectableResourcesDatas" data-uid="GameInterface.GameManager.CollectableResourcesDatas">CollectableResourcesDatas</h4>
+  <div class="markdown level1 summary"><p>所有可采集资源</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IReadOnlyCollection&lt;CollectableResourcesData&gt; CollectableResourcesDatas { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="GameInterface.CollectableResourcesData.html">CollectableResourcesData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GameInterface_GameManager_IsGameOver_" data-uid="GameInterface.GameManager.IsGameOver*"></a>
+  <h4 id="GameInterface_GameManager_IsGameOver" data-uid="GameInterface.GameManager.IsGameOver">IsGameOver</h4>
+  <div class="markdown level1 summary"><p>游戏是否结束</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGameOver { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GameInterface_GameManager_PlayerControllers_" data-uid="GameInterface.GameManager.PlayerControllers*"></a>
+  <h4 id="GameInterface_GameManager_PlayerControllers" data-uid="GameInterface.GameManager.PlayerControllers">PlayerControllers</h4>
+  <div class="markdown level1 summary"><p>所有玩家控制器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IReadOnlyList&lt;PlayerController&gt; PlayerControllers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="GameInterface.PlayerController.html">PlayerController</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GameInterface_GameManager_PlayerIndex_" data-uid="GameInterface.GameManager.PlayerIndex*"></a>
+  <h4 id="GameInterface_GameManager_PlayerIndex" data-uid="GameInterface.GameManager.PlayerIndex">PlayerIndex</h4>
+  <div class="markdown level1 summary"><p>此玩家的编号</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PlayerIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="GameInterface_GameManager_DestroySoldier_" data-uid="GameInterface.GameManager.DestroySoldier*"></a>
+  <h4 id="GameInterface_GameManager_DestroySoldier_GameInterface_Soldier_" data-uid="GameInterface.GameManager.DestroySoldier(GameInterface.Soldier)">DestroySoldier(Soldier)</h4>
+  <div class="markdown level1 summary"><p>摧毁士兵</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void DestroySoldier(Soldier soldier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GameInterface.Soldier.html">Soldier</a></td>
+        <td><span class="parametername">soldier</span></td>
+        <td><p>要摧毁的士兵</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GameInterface_GameManager_SpawnBase_" data-uid="GameInterface.GameManager.SpawnBase*"></a>
+  <h4 id="GameInterface_GameManager_SpawnBase_Vector2_GameInterface_CampData_GameInterface_PlayerController_" data-uid="GameInterface.GameManager.SpawnBase(Vector2,GameInterface.CampData,GameInterface.PlayerController)">SpawnBase(Vector2, CampData, PlayerController)</h4>
+  <div class="markdown level1 summary"><p>生成基地</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract OperationalBase SpawnBase(Vector2 SpawnPoint, CampData campData, PlayerController playerController)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">SpawnPoint</span></td>
+        <td><p>生成位置</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GameInterface.CampData.html">CampData</a></td>
+        <td><span class="parametername">campData</span></td>
+        <td><p>阵营数据</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GameInterface.PlayerController.html">PlayerController</a></td>
+        <td><span class="parametername">playerController</span></td>
+        <td><p>玩家</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GameInterface.OperationalBase.html">OperationalBase</a></td>
+        <td><p>基地脚本</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GameInterface_GameManager_SpawnCollectableResource_" data-uid="GameInterface.GameManager.SpawnCollectableResource*"></a>
+  <h4 id="GameInterface_GameManager_SpawnCollectableResource_Vector2_GameInterface_CollectableResourcesData_System_Single_" data-uid="GameInterface.GameManager.SpawnCollectableResource(Vector2,GameInterface.CollectableResourcesData,System.Single)">SpawnCollectableResource(Vector2, CollectableResourcesData, Single)</h4>
+  <div class="markdown level1 summary"><p>生成可采集资源</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract CollectableResources SpawnCollectableResource(Vector2 SpawnPoint, CollectableResourcesData resourcesData, float scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">SpawnPoint</span></td>
+        <td><p>生成位置</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GameInterface.CollectableResourcesData.html">CollectableResourcesData</a></td>
+        <td><span class="parametername">resourcesData</span></td>
+        <td><p>资源数据</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>缩放倍率</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GameInterface.CollectableResources.html">CollectableResources</a></td>
+        <td><p>可采集资源脚本</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GameInterface_GameManager_SpawnSoldier_" data-uid="GameInterface.GameManager.SpawnSoldier*"></a>
+  <h4 id="GameInterface_GameManager_SpawnSoldier_Vector2_GameInterface_ISoldierSpawnInfo_GameInterface_OperationalBase_" data-uid="GameInterface.GameManager.SpawnSoldier(Vector2,GameInterface.ISoldierSpawnInfo,GameInterface.OperationalBase)">SpawnSoldier(Vector2, ISoldierSpawnInfo, OperationalBase)</h4>
+  <div class="markdown level1 summary"><p>生成士兵</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Soldier SpawnSoldier(Vector2 SpawnPoint, ISoldierSpawnInfo soldierSpawnInfo, OperationalBase operationalBase)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">SpawnPoint</span></td>
+        <td><p>生成位置</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GameInterface.ISoldierSpawnInfo.html">ISoldierSpawnInfo</a></td>
+        <td><span class="parametername">soldierSpawnInfo</span></td>
+        <td><p>士兵生成数据</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GameInterface.OperationalBase.html">OperationalBase</a></td>
+        <td><span class="parametername">operationalBase</span></td>
+        <td><p>基地脚本</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GameInterface.Soldier.html">Soldier</a></td>
+        <td><p>士兵脚本</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            游戏文档
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

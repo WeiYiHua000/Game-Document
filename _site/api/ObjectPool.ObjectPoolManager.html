@@ -1,0 +1,764 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ObjectPoolManager
+   | &#28216;&#25103;&#25991;&#26723; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ObjectPoolManager
+   | &#28216;&#25103;&#25991;&#26723; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ObjectPool.ObjectPoolManager">
+  
+  
+  <h1 id="ObjectPool_ObjectPoolManager" data-uid="ObjectPool.ObjectPoolManager" class="text-break">Class ObjectPoolManager
+  </h1>
+  <div class="markdown level0 summary"><p>对象池管理器</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="GameInterface.Singleton-1.html">Singleton</a>&lt;<a class="xref" href="ObjectPool.ObjectPoolManager.html">ObjectPoolManager</a>&gt;</div>
+    <div class="level2"><span class="xref">ObjectPoolManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GameInterface.Singleton-1.html#GameInterface_Singleton_1_Instance">Singleton&lt;ObjectPoolManager&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="GameInterface.Singleton-1.html#GameInterface_Singleton_1_Awake">Singleton&lt;ObjectPoolManager&gt;.Awake()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ObjectPool.html">ObjectPool</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="ObjectPool_ObjectPoolManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ObjectPoolManager : Singleton&lt;ObjectPoolManager&gt;</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="ObjectPool_ObjectPoolManager_logStatus" data-uid="ObjectPool.ObjectPoolManager.logStatus">logStatus</h4>
+  <div class="markdown level1 summary"><p>是否开启状态调试日志</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool logStatus</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ObjectPool_ObjectPoolManager_ClearObjectPool_" data-uid="ObjectPool.ObjectPoolManager.ClearObjectPool*"></a>
+  <h4 id="ObjectPool_ObjectPoolManager_ClearObjectPool_GameObject_" data-uid="ObjectPool.ObjectPoolManager.ClearObjectPool(GameObject)">ClearObjectPool(GameObject)</h4>
+  <div class="markdown level1 summary"><p>清除对象池内空闲物体</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearObjectPool(GameObject prefab)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>预制体</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ObjectPool_ObjectPoolManager_ClearObjectPoolStatic_" data-uid="ObjectPool.ObjectPoolManager.ClearObjectPoolStatic*"></a>
+  <h4 id="ObjectPool_ObjectPoolManager_ClearObjectPoolStatic_GameObject_" data-uid="ObjectPool.ObjectPoolManager.ClearObjectPoolStatic(GameObject)">ClearObjectPoolStatic(GameObject)</h4>
+  <div class="markdown level1 summary"><p>清除对象池内空闲物体</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearObjectPoolStatic(GameObject prefab)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>预制体</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ObjectPool_ObjectPoolManager_CreatObjectPool_" data-uid="ObjectPool.ObjectPoolManager.CreatObjectPool*"></a>
+  <h4 id="ObjectPool_ObjectPoolManager_CreatObjectPool_GameObject_Func_GameObject_GameObject__Action_GameObject__System_Int32_System_Int32_" data-uid="ObjectPool.ObjectPoolManager.CreatObjectPool(GameObject,Func{GameObject,GameObject},Action{GameObject},System.Int32,System.Int32)">CreatObjectPool(GameObject, Func&lt;GameObject, GameObject&gt;, Action&lt;GameObject&gt;, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>创建对象池</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectPool&lt;GameObject&gt; CreatObjectPool(GameObject prefab, Func&lt;GameObject, GameObject&gt; instantiateFunc, Action&lt;GameObject&gt; destoyAction, int maxNumber = 10, int initialSize = 5)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>对象预制体</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">GameObject</span>, <span class="xref">GameObject</span>&gt;</td>
+        <td><span class="parametername">instantiateFunc</span></td>
+        <td><p>实例化方法</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">GameObject</span>&gt;</td>
+        <td><span class="parametername">destoyAction</span></td>
+        <td><p>删除事件</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxNumber</span></td>
+        <td><p>最大数量（0为不限制）</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">initialSize</span></td>
+        <td><p>初始数量</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ObjectPool.ObjectPool-1.html">ObjectPool</a>&lt;<span class="xref">GameObject</span>&gt;</td>
+        <td><p>生成的对象池</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ObjectPool_ObjectPoolManager_CreatPoolStatic_" data-uid="ObjectPool.ObjectPoolManager.CreatPoolStatic*"></a>
+  <h4 id="ObjectPool_ObjectPoolManager_CreatPoolStatic_GameObject_Func_GameObject_GameObject__Action_GameObject__System_Int32_System_Int32_" data-uid="ObjectPool.ObjectPoolManager.CreatPoolStatic(GameObject,Func{GameObject,GameObject},Action{GameObject},System.Int32,System.Int32)">CreatPoolStatic(GameObject, Func&lt;GameObject, GameObject&gt;, Action&lt;GameObject&gt;, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>创建对象池</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreatPoolStatic(GameObject prefab, Func&lt;GameObject, GameObject&gt; instantiateFunc, Action&lt;GameObject&gt; destoyAction, int maxNumber = 10, int initialSize = 5)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>对象预制体</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">GameObject</span>, <span class="xref">GameObject</span>&gt;</td>
+        <td><span class="parametername">instantiateFunc</span></td>
+        <td><p>实例化方法</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">GameObject</span>&gt;</td>
+        <td><span class="parametername">destoyAction</span></td>
+        <td><p>删除事件</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxNumber</span></td>
+        <td><p>最大数量（0为不限制）</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">initialSize</span></td>
+        <td><p>初始数量</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ObjectPool_ObjectPoolManager_DestroyObjectPool_" data-uid="ObjectPool.ObjectPoolManager.DestroyObjectPool*"></a>
+  <h4 id="ObjectPool_ObjectPoolManager_DestroyObjectPool_GameObject_" data-uid="ObjectPool.ObjectPoolManager.DestroyObjectPool(GameObject)">DestroyObjectPool(GameObject)</h4>
+  <div class="markdown level1 summary"><p>摧毁对象池</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject[] DestroyObjectPool(GameObject prefab)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>预制体</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span>[]</td>
+        <td><p>使用中的物体</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ObjectPool_ObjectPoolManager_DestroyObjectPoolStatic_" data-uid="ObjectPool.ObjectPoolManager.DestroyObjectPoolStatic*"></a>
+  <h4 id="ObjectPool_ObjectPoolManager_DestroyObjectPoolStatic_GameObject_" data-uid="ObjectPool.ObjectPoolManager.DestroyObjectPoolStatic(GameObject)">DestroyObjectPoolStatic(GameObject)</h4>
+  <div class="markdown level1 summary"><p>摧毁对象池</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject[] DestroyObjectPoolStatic(GameObject prefab)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>预制体</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span>[]</td>
+        <td><p>使用中的物体</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ObjectPool_ObjectPoolManager_GetObject_" data-uid="ObjectPool.ObjectPoolManager.GetObject*"></a>
+  <h4 id="ObjectPool_ObjectPoolManager_GetObject_GameObject_" data-uid="ObjectPool.ObjectPoolManager.GetObject(GameObject)">GetObject(GameObject)</h4>
+  <div class="markdown level1 summary"><p>获取池内对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject GetObject(GameObject prefab)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>预制体</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><p>实例化对象</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ObjectPool_ObjectPoolManager_GetObjectPool_" data-uid="ObjectPool.ObjectPoolManager.GetObjectPool*"></a>
+  <h4 id="ObjectPool_ObjectPoolManager_GetObjectPool_GameObject_" data-uid="ObjectPool.ObjectPoolManager.GetObjectPool(GameObject)">GetObjectPool(GameObject)</h4>
+  <div class="markdown level1 summary"><p>获取对象池</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectPool&lt;GameObject&gt; GetObjectPool(GameObject prefab)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>预制体</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ObjectPool.ObjectPool-1.html">ObjectPool</a>&lt;<span class="xref">GameObject</span>&gt;</td>
+        <td><p>对象池</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ObjectPool_ObjectPoolManager_GetObjectPoolStatic_" data-uid="ObjectPool.ObjectPoolManager.GetObjectPoolStatic*"></a>
+  <h4 id="ObjectPool_ObjectPoolManager_GetObjectPoolStatic_GameObject_" data-uid="ObjectPool.ObjectPoolManager.GetObjectPoolStatic(GameObject)">GetObjectPoolStatic(GameObject)</h4>
+  <div class="markdown level1 summary"><p>获取对象池</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectPool&lt;GameObject&gt; GetObjectPoolStatic(GameObject prefab)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>预制体</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ObjectPool.ObjectPool-1.html">ObjectPool</a>&lt;<span class="xref">GameObject</span>&gt;</td>
+        <td><p>对象池</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ObjectPool_ObjectPoolManager_GetObjectStatic_" data-uid="ObjectPool.ObjectPoolManager.GetObjectStatic*"></a>
+  <h4 id="ObjectPool_ObjectPoolManager_GetObjectStatic_GameObject_" data-uid="ObjectPool.ObjectPoolManager.GetObjectStatic(GameObject)">GetObjectStatic(GameObject)</h4>
+  <div class="markdown level1 summary"><p>获取池内对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject GetObjectStatic(GameObject prefab)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>预制体</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><p>实例化对象</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ObjectPool_ObjectPoolManager_PrintStatus_" data-uid="ObjectPool.ObjectPoolManager.PrintStatus*"></a>
+  <h4 id="ObjectPool_ObjectPoolManager_PrintStatus" data-uid="ObjectPool.ObjectPoolManager.PrintStatus">PrintStatus()</h4>
+  <div class="markdown level1 summary"><p>输出对象池状态</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PrintStatus()</code></pre>
+  </div>
+  
+  
+  <a id="ObjectPool_ObjectPoolManager_ReleaseObject_" data-uid="ObjectPool.ObjectPoolManager.ReleaseObject*"></a>
+  <h4 id="ObjectPool_ObjectPoolManager_ReleaseObject_GameObject_" data-uid="ObjectPool.ObjectPoolManager.ReleaseObject(GameObject)">ReleaseObject(GameObject)</h4>
+  <div class="markdown level1 summary"><p>释放对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseObject(GameObject clone)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">clone</span></td>
+        <td><p>实例化对象</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ObjectPool_ObjectPoolManager_ReleaseObjectStatic_" data-uid="ObjectPool.ObjectPoolManager.ReleaseObjectStatic*"></a>
+  <h4 id="ObjectPool_ObjectPoolManager_ReleaseObjectStatic_GameObject_" data-uid="ObjectPool.ObjectPoolManager.ReleaseObjectStatic(GameObject)">ReleaseObjectStatic(GameObject)</h4>
+  <div class="markdown level1 summary"><p>释放对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReleaseObjectStatic(GameObject clone)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">clone</span></td>
+        <td><p>实例化对象</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ObjectPool_ObjectPoolManager_WarmObjectPool_" data-uid="ObjectPool.ObjectPoolManager.WarmObjectPool*"></a>
+  <h4 id="ObjectPool_ObjectPoolManager_WarmObjectPool_GameObject_System_Int32_" data-uid="ObjectPool.ObjectPoolManager.WarmObjectPool(GameObject,System.Int32)">WarmObjectPool(GameObject, Int32)</h4>
+  <div class="markdown level1 summary"><p>预热对象池</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WarmObjectPool(GameObject prefab, int number)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>预制体</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">number</span></td>
+        <td><p>预热数量</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ObjectPool_ObjectPoolManager_WarmObjectPoolStatic_" data-uid="ObjectPool.ObjectPoolManager.WarmObjectPoolStatic*"></a>
+  <h4 id="ObjectPool_ObjectPoolManager_WarmObjectPoolStatic_GameObject_System_Int32_" data-uid="ObjectPool.ObjectPoolManager.WarmObjectPoolStatic(GameObject,System.Int32)">WarmObjectPoolStatic(GameObject, Int32)</h4>
+  <div class="markdown level1 summary"><p>预热对象池</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WarmObjectPoolStatic(GameObject prefab, int number)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>预制体</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">number</span></td>
+        <td><p>预热数量</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            游戏文档
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
